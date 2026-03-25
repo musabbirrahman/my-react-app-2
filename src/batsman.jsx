@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './App.css'
 
 export default function Batsman(){
     const [runs, setRuns] = useState(0);
@@ -22,20 +23,29 @@ export default function Batsman(){
     }
     return(
         <div>
-            <h1>Batsman : Bangladeshi man</h1>
+            <h1 className="title">Batsman : Bangladeshi man</h1>
             {
-                runs >= 50 && <p>You Scored 50</p>
+                runs >= 50 && <p id="score-fifty" className="paragraph">You Scored 50</p>
             }
             {
-                runs >= 100 && <p>You Scored 100</p>
+                runs >= 100 && <p className="paragraph">You Scored 100</p>
             }
 
-            <p>Score: {runs}</p>
-            <p>Sixes: {sixes}</p>
-            <p>Fours: {fours}</p>
-            <button onClick={handleSingles}>Single</button>
-            <button onClick={handleFours}>Four</button>
-            <button onClick={handleSixes}>Six</button>
+            <div className="box">
+                <div className="flex">
+                    <p>Score: {runs}</p>
+                    <p>Sixes: {sixes}</p>
+                    <p>Fours: {fours}</p>
+                </div>
+                <div className="flex">
+                    <button className="btn" onClick={handleSingles}>Single</button>
+                    <button className="btn" onClick={handleFours}>Four</button>
+                    <button className="btn" onClick={handleSixes}>Six</button>
+                </div>
+            </div>
+
+            
         </div>
+        
     )
 }

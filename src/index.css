@@ -112,6 +112,37 @@ code {
 .btn{
     padding: 10px;
     border-radius: 10px;
-    width: 200px;
+    border: 1px solid white;
+    width: 100px;
+    color: #e5e4e7;
+    background-color: rgba(255, 0, 98, 0.529);
+
    
 }
+
+.title{
+    font-size: 25px;
+  }
+
+  .box{
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    margin: 10px auto;
+
+  }
+
+  .flex{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .paragraph{
+    font-size: 25px;
+    color: #aa3bff;
+    margin-bottom: 10px;
+  }
